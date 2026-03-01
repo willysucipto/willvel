@@ -30,6 +30,32 @@
       overflow:hidden;
     }
 
+    /* Couple photo (Step 4 only) */
+    .photoWrap{
+      width: min(520px, 92%);
+      margin: 8px auto 2px;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.80);
+      background: rgba(255,255,255,0.55);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.14);
+    }
+    .photoWrap img{
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .caption{
+      margin-top: 10px;
+      font-size: clamp(14px, 1.8vw, 18px);
+      color: var(--muted);
+      font-weight: 850;
+    }
+
+    /*udpate till here*/
+
+    
     .wrap{
       width:min(980px, 94vw);
       margin: 0 auto;
@@ -371,7 +397,7 @@
         <div>
           <h1 class="title">Three Questions for Vela💗</h1>
           <p class="subtitle">
-            Tiny story mode first… then the final boss question 😳
+            Tiny story mode first… then the final boss question 
           </p>
         </div>
 
@@ -449,6 +475,12 @@
       <section class="panel hidden" id="step4">
         <div class="celebrate">
           <div class="pill">✅ OFFICIAL</div>
+          
+          <div class="photoWrap">
+            <img src="us.jpg" alt="Us 💗" loading="lazy" />
+          </div>
+          <p class="caption">Us 🥺💗</p>
+          
           <h2 class="newline">We’re officially… 💗</h2>
           <p class="bigline" id="officialLine">
             Boyfriend & Girlfriend!
@@ -657,4 +689,5 @@
   </script>
 </body>
 </html>
+
 
